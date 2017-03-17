@@ -23,5 +23,7 @@ namespace OOP_Lab02 {
         public override String ToString( ) {
             return "Circle (Radius=" + this.Radius + ")";
         }
+
+        public float Area { get { return (float)(Math.PI * Math.Pow(Radius, 2)); } }
     }
 }
