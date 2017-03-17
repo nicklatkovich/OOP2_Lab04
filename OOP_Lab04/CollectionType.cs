@@ -14,6 +14,12 @@ namespace OOP_Lab04 {
             _set = new SortedSet<T>( );
         }
 
+        public CollectionType(SortedSet<T> set) : this( ) {
+            foreach (T elem in set) {
+                Add(elem);
+            }
+        }
+
         public uint NumberOfValues(T value) {
             return (_set.Contains(value) ? 1u : 0u);
         }
