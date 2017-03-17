@@ -47,6 +47,7 @@
     <Compile Include="CollectionType.cs" />
     <Compile Include="OOP_Lab02\Cylinder.cs" />
     <Compile Include="OOP_Lab02\NotPositiveValueException.cs" />
+    <Compile Include="OOP_Lab02\SimpleUtils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

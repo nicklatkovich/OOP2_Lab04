@@ -81,5 +81,14 @@ namespace OOP_Lab02 {
                 throw new Exception("object of compare is not cylinder");
             }
         }
+
+        public static Cylinder Random {
+            get {
+                return new Cylinder(
+                    SimpleUtils.IRandomRange(10, 40),
+                    SimpleUtils.IRandomRange(20, 80));
+            }
+        }
+
     }
 }
