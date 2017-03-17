@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OOP_Lab02 {
-    class Cylinder {
+    class Cylinder : IComparable {
 
         private Circle _base;
         private float _height;
@@ -76,5 +76,14 @@ namespace OOP_Lab02 {
             return result;
         }
 
+        public float Volume { get { return this.BaseCircle.Area * Height; } }
+
+        public Int32 CompareTo(Object obj) {
+            if (obj is Cylinder) {
+                return Math.Sign(this.Volume - (obj as Cylinder).Volume);
+            } else {
+                throw new Exception("object of compare is not cylinder");
+            }
+        }
     }
 }
