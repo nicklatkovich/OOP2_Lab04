@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OOP_Lab02\Circle.cs" />
     <Compile Include="CollectionType.cs" />
+    <Compile Include="OOP_Lab02\Cylinder.cs" />
+    <Compile Include="OOP_Lab02\NotPositiveValueException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
