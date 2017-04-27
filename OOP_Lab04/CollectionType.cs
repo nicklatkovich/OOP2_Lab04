@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace OOP_Lab04 {
-    class CollectionType<T> : ISet<T> where T : IComparable {
+    public class CollectionType<T> : ISet<T> where T : IComparable {
 
         private SortedSet<T> _set;
 
