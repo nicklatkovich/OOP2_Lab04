@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace OOP_Lab02 {
-    class Circle {
+    public class Circle {
 
         private float _radius;
 

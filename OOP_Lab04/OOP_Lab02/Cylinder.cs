@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace OOP_Lab02 {
-    class Cylinder : IComparable {
+    public class Cylinder : IComparable {
 
         private Circle _base;
         private float _height;
@@ -70,6 +70,10 @@ namespace OOP_Lab02 {
             result += "\tHeight : " + this.Height + "\n";
             result += "}";
             return result;
+        }
+
+        public String ToShortString( ) {
+            return "Cylinder { R: " + BaseCircle.Radius + ", H: " + this.Height + "}";
         }
 
         public float Volume { get { return this.BaseCircle.Area * Height; } }
